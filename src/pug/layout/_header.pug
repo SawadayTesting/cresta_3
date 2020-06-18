@@ -1,0 +1,31 @@
+header.ly_header
+	.ly_header_inner
+		.ly_header_inner_hamMenu
+			a(href="#")
+				img.el_header_logo(src="./img/site-logo.png" srcset="./img/site-logo@2x.png 2x" alt="ロゴ")
+		///.ly_header_inner_hamMenu
+		//hamburgerMenu
+		.nav_drawer
+			input#nav_input.nav_unshown(type="checkbox")
+			label#nav_open(for="nav_input")
+				span
+			#nav_content
+				label.el_hamburgerClose(for="nav_input")
+					span
+					p.el_header_copy MENU
+				.bl_hamburgerWrapper
+					ul.bl_hamburger
+						li.el_hamburger_item.el_hamburger_badge
+							img(decoding="async" src="./img/header_badge.png" alt="メニューのアイコン")
+						li.el_hamburger_item.hp_tac
+							a(href="pages/about.html") ABOUT US
+						li.el_hamburger_item.hp_tac
+							a(href="index.html#lk_works") WORKS
+						li.el_hamburger_item.hp_tac
+							a(href="index.html#lk_culture") CULTURE
+						li.el_hamburger_item.hp_tac
+							a(href="index.html#lk_topics") TOPICS
+						li.el_hamburger_item.hp_tac
+							a(href="pages/contact.html") CONTACT
+		///.nav_drawer
+		p.el_header_copy MENU
